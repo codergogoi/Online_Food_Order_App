@@ -2,11 +2,11 @@
 
 As you all know Heroku has stoped free service for running the nodejs app for free. So as a solution for backend API, I have created a docker image to support the tutorial series. Kindly follow the below steps to run the server on your local machine and change the base URL to the below in your mobile app configuration to call APIs.
 
-## Install Docker desktop into you machine
+## Install Docker desktop into you machine & run
 
 Install Docker Desktop [https://www.docker.com/products/docker-desktop/]
 
-Download the backend directory to your machine and go to your terminal and get inside the directory to run the docker imnage.
+Download the backend directory to your machine and go to your terminal and get inside the directory to run the docker image.
 
 `$ cd backend`
 
