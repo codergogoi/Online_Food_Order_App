@@ -1,0 +1,7 @@
+version: "3"
+services:
+  food_backend:
+    image: codewithjay/food_order_backend:latest
+    ports:
+      - "8888:8888" # You can change the port number "[YOUR_MACHINE_PORT]:[CONTAINER_PORT(Don't change it)]"
+    container_name: food_app_backend

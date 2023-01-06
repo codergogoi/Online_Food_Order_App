@@ -1,0 +1,850 @@
+{
+	"info": {
+		"_postman_id": "bfa18a70-897c-4d53-bd2e-5f3f48524a88",
+		"name": "FoodOrders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8734310"
+	},
+	"item": [
+		{
+			"name": "Food  Availability",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{OFA_BASE}}/food/availability/400012",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"food",
+						"availability",
+						"400012"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Foods - Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/food/search/5698",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"food",
+						"search",
+						"5698"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login V1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"cg@gmail.com\",\n\t\"password\": \"1234567\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/login/v1",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"login",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"gogoi1@gogoi.com\",\n\t\"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/login",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup v1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"gogoi2@gogoi.com\",\n\t\"password\": \"123456\",\n    \"phone\": \"8989898989\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/signup",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"gogoi6@gogoi.com\",\n\t\"password\": \"123456\",\n    \"phone\": \"8989898989\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/create-account",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"create-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Verify",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZmI5MjI1NDFkZDk1MjAwMjQ2Zjc1YjQiLCJlbWFpbCI6ImdnNEBjb2RlcmdvZ29pLmNvbSIsInZlcmlmaWVkIjpmYWxzZSwiaWF0IjoxNjA1OTY4NDk3LCJleHAiOjE2MTM3NDQ0OTd9.0WIJWrA0kJ9C5tGkMxKqn3l_57dpWRzD0bPEEWij-tQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"otp\": \"595959\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/verify",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get OTP",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"gogoi1@gogoi.com\",\n\t\"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/otp",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjllM2RkY2ZkM2E0MDAwMjRkZTVmMjkiLCJlbWFpbCI6ImdvZ29pQGNvZGVyZ29nb2kuY29tIiwiaWF0IjoxNjA1MjY3MDIyLCJleHAiOjE2MTMwNDMwMjJ9.zPxKu-dIB1kb5-p5SrgJoJtmgIW5rCsKXiVcWafcVMs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cart\": [\n        {\n        \"_id\": \"5ec01c2c6b0ad806dd79c3e1\",\n        \"unit\": 2\n     },\n     {\n        \"_id\": \"5ec0c77a43434c07314cdf63\",\n        \"unit\": 3\n     },\n     {\n        \"_id\": \"5ec0c7b943434c07314cdf64\",\n        \"unit\": 1\n     }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/create-order",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"create-order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/order/",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"order",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/order/63b72b458203385b11df3c2f",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"order",
+						"63b72b458203385b11df3c2f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Offers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjllM2RkY2ZkM2E0MDAwMjRkZTVmMjkiLCJlbWFpbCI6ImdvZ29pQGNvZGVyZ29nb2kuY29tIiwiaWF0IjoxNjA1MjY3MDIyLCJleHAiOjE2MTMwNDMwMjJ9.zPxKu-dIB1kb5-p5SrgJoJtmgIW5rCsKXiVcWafcVMs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cart\": [\n        {\n        \"_id\": \"5ec01c2c6b0ad806dd79c3e1\",\n        \"unit\": 2\n     },\n     {\n        \"_id\": \"5ec0c77a43434c07314cdf63\",\n        \"unit\": 3\n     },\n     {\n        \"_id\": \"5ec0c7b943434c07314cdf64\",\n        \"unit\": 1\n     }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/food/offers/1234534",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"food",
+						"offers",
+						"1234534"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - Add To Cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/cart/5f8350abeb26d40024f4ecf0",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"cart",
+						"5f8350abeb26d40024f4ecf0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - Add New Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZWMwZDJiZjRmNTAxMTA5NjZlMzg1NWIiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE1ODk2OTY1MDQsImV4cCI6MTU5NzQ3MjUwNH0.qoIKI6UO8PuFIOqe8A6r4Lm32YgPUFfwTz1DhPK2srI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/add-order",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"add-order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - Edit Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZWMzNzRkNTVkM2Q3ODA2YzkzZjk0NWEiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE1ODk4Njc3MzQsImV4cCI6MTU5NzY0MzczNH0.JKQQB4WrngDdYTQIYY-sEYB4T7eHsuOmyT1iFGZtlU4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\": \"Edapally Cochin, 682024\",\n\t\"phone\": \"985679457\",\n\t\"lat\": \"16.89\",\n\t\"lng\": \"78.60\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/address/",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"address",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - Edit Cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZWMzNzRkNTVkM2Q3ODA2YzkzZjk0NWEiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE1ODk4Njc3MzQsImV4cCI6MTU5NzY0MzczNH0.JKQQB4WrngDdYTQIYY-sEYB4T7eHsuOmyT1iFGZtlU4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/cart/5ec0c80043434c07314cdf66/0",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"cart",
+						"5ec0c80043434c07314cdf66",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - View Order Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/order/6065a2f62aad9fb177392993",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"order",
+						"6065a2f62aad9fb177392993"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - Remove From Cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZWMzNzRkNTVkM2Q3ODA2YzkzZjk0NWEiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE1ODk4Njc3MzQsImV4cCI6MTU5NzY0MzczNH0.JKQQB4WrngDdYTQIYY-sEYB4T7eHsuOmyT1iFGZtlU4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/cart/5ec0c80043434c07314cdf66",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"cart",
+						"5ec0c80043434c07314cdf66"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - Profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZmIyODFlMmYyNTkwZjRiNGVkZThmMDEiLCJlbWFpbCI6ImdvMkBnbWFpbC5jb20iLCJ2ZXJpZmllZCI6ZmFsc2UsImlhdCI6MTYwNTkyODExNiwiZXhwIjoxNjEzNzA0MTE2fQ.t6reEnbyvf2jF38F5KuAhsgUxAB4329E8pP15dmr_6w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/profile/",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - View Cart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZWMzNzRkNTVkM2Q3ODA2YzkzZjk0NWEiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE1ODk4Njc3MzQsImV4cCI6MTU5NzY0MzczNH0.JKQQB4WrngDdYTQIYY-sEYB4T7eHsuOmyT1iFGZtlU4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/user/cart",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"user",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Foods - View",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/food/offers",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"food",
+						"offers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Foods - in 30 Min",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/food/in-30-min",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"food",
+						"in-30-min"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Foods - Top Restaurants",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/food/top/restaurants",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"food",
+						"top",
+						"restaurants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Foods - form Specific restaurant",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/food/restaurant/5ec01a8cc37246066220a635",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"food",
+						"restaurant",
+						"5ec01a8cc37246066220a635"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Foods - Details by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{OFA_BASE}}/food/5f8350abeb26d40024f4ecf0",
+					"host": [
+						"{{OFA_BASE}}"
+					],
+					"path": [
+						"food",
+						"5f8350abeb26d40024f4ecf0"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2I0Mjg1YzAxZmM3YzQ3MDA0NDcyNTgiLCJlbWFpbCI6ImdvZ29pMUBnb2dvaS5jb20iLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNjczMDAwNTAzLCJleHAiOjE2ODA3NzY1MDN9.CIz12Uhl_dZ807MVnqKTEuIqux0gi4s1K6lbRpg94aY",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
