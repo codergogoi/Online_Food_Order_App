@@ -8,35 +8,40 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@react-native-community/async-storage": "^1.12.0",
+    "@react-native-async-storage/async-storage": "1.17.11",
     "@react-native-community/masked-view": "0.1.10",
-    "@types/react-redux": "^7.1.9",
-    "@types/redux-thunk": "^2.1.0",
-    "axios": "^0.20.0",
-    "expo": "~38.0.8",
-    "expo-location": "~8.2.1",
-    "expo-status-bar": "^1.0.2",
-    "moment": "^2.28.0",
-    "react": "~16.11.0",
-    "react-dom": "~16.11.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
-    "react-native-gesture-handler": "~1.6.0",
-    "react-native-reanimated": "~1.9.0",
-    "react-native-safe-area-context": "~3.0.7",
-    "react-native-screens": "~2.9.0",
-    "react-native-web": "~0.11.7",
-    "react-navigation": "^4.4.0",
-    "react-navigation-stack": "^2.8.2",
-    "react-navigation-tabs": "^2.9.0",
-    "react-redux": "^7.2.1",
-    "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0"
+    "@types/react-redux": "7.1.9",
+    "@types/redux-thunk": "2.1.0",
+    "axios": "0.20.0",
+    "expo": "48.0.17",
+    "expo-location": "15.1.1",
+    "expo-status-bar": "1.4.4",
+    "moment": "2.28.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.71.8",
+    "react-native-gesture-handler": "2.9.0",
+    "react-native-reanimated": "2.14.4",
+    "react-native-safe-area-context": "4.5.0",
+    "react-native-screens": "3.20.0",
+    "react-native-web": "0.18.10",
+    "react-navigation": "4.4.0",
+    "react-navigation-stack": "2.8.2",
+    "react-navigation-tabs": "2.9.0",
+    "react-redux": "7.2.1",
+    "redux": "4.0.5",
+    "redux-thunk": "2.3.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.6",
-    "@types/react": "~16.9.41",
-    "@types/react-native": "~0.62.13",
-    "typescript": "~3.9.5"
+    "@babel/core": "7.22.1",
+    "@types/react": "18.0.27",
+    "@types/react-native": "0.72.2",
+    "typescript": "4.9.4"
   },
-  "private": true
+  "private": true,
+  "resolutions": {
+    "@types/react": "17.0.14",
+    "@types/react-dom": "17.0.14"
+  }
 }

@@ -1,5 +1,4 @@
+export const BASE_URL = "http://localhost:8888/";
 
-export const BASE_URL = "https://online-foods.herokuapp.com/"
-
-export * from './useNavigation'
-export * from './CartHelper';
+export * from "./useNavigation";
+export * from "./CartHelper";
