@@ -1,4 +1,4 @@
-# Angular_Food_Ordering_App
+# Angular Food Ordering App
 Online Food Order App on React Native using Typescript. It is a hot tutorial series on youtube where you can learn how to make apps like Uber Eats from the sketch. We have covered all the advanced topics to make it production-ready.  
 
 This repository showcases an Expo project that I've been actively developing, utilizing a myriad of technologies. Below is an overview of the directories and files within the project, along with a brief description of their purpose.
